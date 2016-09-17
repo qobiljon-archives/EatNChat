@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         InitializeComponents();
         //TODO: applyLang(); for initially inflated layouts
-
-        int var = 4;
     }
 
 
