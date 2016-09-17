@@ -5,6 +5,14 @@
     android:background="@color/backgroundColor"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THIS IS A TITLE"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@android:color/white"/>
+
     <ScrollView android:visibility="visible"
         android:id="@+id/main_scrollview_login"
         android:layout_width="match_parent"
