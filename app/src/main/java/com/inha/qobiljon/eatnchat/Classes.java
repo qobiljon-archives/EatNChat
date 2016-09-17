@@ -33,7 +33,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-@SuppressWarnings("unused")
 class Credentials {
     private static SQLiteDatabase db;
     private static boolean initialized = false;
