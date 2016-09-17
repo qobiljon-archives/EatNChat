@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/actionbar_main"
+        android:background="#4db6ac"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageButton android:id="@+id/availability_button_main"
+            android:background="@android:color/transparent"
+            android:src="@drawable/connection_status_icon"
+            android:onClick="openAvailabilityChangeDialog"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:layout_height="40dp"/>
+
+        <TextView android:id="@+id/status_text_main"
+            android:gravity="center_vertical"
+            android:text="@string/status"
+            android:layout_width="0dp"
+            android:onClick="openStatusChangeDialog"
+            android:clickable="true"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+
+        <ImageButton android:id="@+id/search_button_main"
+            android:onClick="openSearchWindow"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search_icon"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/pagename_text_main"
+        android:layout_below="@id/actionbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:text="@string/name"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:padding="10dp"/>
+
+    <View android:id="@+id/separator_main"
+        android:layout_below="@id/pagename_text_main"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout android:id="@+id/container_main"
+        android:layout_below="@id/separator_main"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <View android:id="@+id/shadow_view_main"
+        android:layout_below="@id/actionbar_main"
+        android:onClick="toggleControlButtons"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:alpha="0.7"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TableLayout android:id="@+id/controls_container_main"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <ImageButton android:tag="MyProfile"
+                android:id="@+id/profilecontrol_button_main"
+                android:onClick="controlButtonClick"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/profile_icon"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <ImageButton android:tag="TodayContacts"
+                android:onClick="controlButtonClick"
+                android:id="@+id/todaycontrol_button_main"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/today_icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <ImageButton android:tag="AllContacts"
+                android:onClick="controlButtonClick"
+                android:id="@+id/allcontactscontrol_button_main"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/allcontacts_icon"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <ImageButton android:tag="Settings"
+                android:onClick="controlButtonClick"
+                android:id="@+id/settingscontrol_button_main"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/settings_icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <ImageButton android:tag="MediaContacts"
+                android:onClick="controlButtonClick"
+                android:id="@+id/mediacontrol_button_main"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/media_icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <ImageButton
+                android:id="@+id/authorize_button_main"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:onClick="toggleControlButtons"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:src="@drawable/forwardarrow_icon"
+                android:background="@drawable/back_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>

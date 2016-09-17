@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:background="@drawable/clickable_drawable"
+        android:onClick="openLanguagesChangeDialog"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:tag="language"
+            android:id="@+id/language_text_settings"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/language"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView android:id="@+id/languageflag_image_settings"
+                android:contentDescription="@string/flag_description"
+                android:src="@drawable/flag_en"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <TextView android:id="@+id/languagename_text_settings"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/language_name"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:background="@drawable/clickable_drawable"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:tag="font"
+            android:id="@+id/font_text_settings"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/font"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:tag="default font"
+            android:id="@+id/currentfont_text_settings"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_drawable"
+            android:text="@string/default_font"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+</LinearLayout>

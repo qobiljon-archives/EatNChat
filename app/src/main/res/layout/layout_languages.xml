@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_margin="5dp"
+    android:id="@+id/root_layout_languages"
+    android:gravity="clip_horizontal"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:tag="english"
+        android:background="@drawable/clickable_drawable"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/flag_en"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="English"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:tag="russian"
+        android:background="@drawable/clickable_drawable"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/flag_ru"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Русский"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:tag="uzbek"
+        android:background="@drawable/clickable_drawable"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/flag_uz"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="O'zbekcha"/>
+
+    </LinearLayout>
+
+</LinearLayout>

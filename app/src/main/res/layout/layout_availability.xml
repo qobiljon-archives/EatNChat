@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:id="@+id/root_layout_availability">
+
+    <LinearLayout android:tag="@string/status_online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/clickable_drawable"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/connection_status_icon"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:tag="online"
+            android:id="@+id/online_text_availability"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/online"/>
+    </LinearLayout>
+
+    <LinearLayout android:tag="@string/status_away"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/clickable_drawable"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/connection_status_away"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:tag="away"
+            android:id="@+id/away_text_availability"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/away"/>
+    </LinearLayout>
+
+    <LinearLayout android:tag="@string/status_chat_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/clickable_drawable"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/connection_status_chatonly"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:tag="chat only"
+            android:id="@+id/chatonly_text_availability"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_only"/>
+    </LinearLayout>
+
+    <LinearLayout android:tag="@string/status_invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/clickable_drawable"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/connection_status_invisible"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:tag="invisible"
+            android:id="@+id/invisible_text_availability"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/invisible"/>
+    </LinearLayout>
+</LinearLayout>

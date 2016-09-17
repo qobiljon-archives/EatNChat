@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:layout_gravity="end">
+
+    <TextView android:id="@+id/text_message"
+        android:background="@drawable/user_bubble_drawable"
+        android:textColor="#222"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:padding="6dp"
+        android:text="@string/EXAMPLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView android:id="@+id/statebubble_message"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:padding="2dp"
+        android:src="@drawable/done_icon"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/user_bubble_ball"
+        android:layout_width="16dp"
+        android:layout_height="16dp"/>
+
+</LinearLayout>

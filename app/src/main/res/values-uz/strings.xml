@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EXAMPLE">MISOL</string>
+    <string name="app_name">EatNChat</string>
+    <string name="away">UZOQDA</string>
+    <string name="chat_only">FAQAT CHAT</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="contacts_all">Barcha kontaktlar</string>
+    <string name="contacts_media">Media</string>
+    <string name="contacts_search">Kontaktlarni izlash</string>
+    <string name="contacts_today">Bugungi Kontaktlar</string>
+    <string name="create_profile">Profil Yaratish</string>
+    <string name="default_font">ODATIY</string>
+    <string name="default_language">en</string>
+    <string name="flag_description">Tanlangan tilning bayrog\'i</string>
+    <string name="font">Shrift</string>
+    <string name="invisible">KO\'RINMAS</string>
+    <string name="language">Til</string>
+    <string name="language_name">O\'zbekcha</string>
+    <string name="layout_availability_title">Holatingizni ko\'rsating</string>
+    <string name="layout_status_title">Statusni o\'rnating</string>
+    <string name="log_in">Kirish</string>
+    <string name="log_out">CHIQISH</string>
+    <string name="message">Xat</string>
+    <string name="name">Имя</string>
+    <string name="online">FAOL</string>
+    <string name="password">Parol</string>
+    <string name="profile">Profil</string>
+    <string name="remember_me">Eslab qolish</string>
+    <string name="search_new_friends">Yangi do\'stlarni izlash</string>
+    <string name="search_results">ta natija sizning so\'rog\'ingiz uchun</string>
+    <string name="settings">Sizning sozlamalaringiz</string>
+    <string name="status">Status</string>
+    <string name="status_text">Status matni</string>
+    <string name="try_again_warning">Пожалуйста, попробуйте еще раз!</string>
+    <string name="type_query">so\'rovni kiriting</string>
+    <string name="username">Foydalanuvchi ismi</string>
+</resources>

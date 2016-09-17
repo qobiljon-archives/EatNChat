@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout android:id="@+id/searchpanel_toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:gravity="center_vertical">
+
+        <EditText android:id="@+id/search_text_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/type_query"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton android:id="@+id/search_button_main"
+            android:onClick="searchContacts"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search_icon"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchpanel_toolbar_search">
+
+        <LinearLayout android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

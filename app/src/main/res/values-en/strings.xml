@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EatNChat</string>
+    <string name="EXAMPLE">EXAMPLE</string>
+    <string name="settings">Your settings</string>
+    <string name="default_language">en</string>
+    <string name="language_name">English</string>
+    <string name="log_in">Log-in</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="contacts_today">TodayContacts</string>
+    <string name="confirm">Confirm</string>
+    <string name="try_again_warning">Please, try again!</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="online">ONLINE</string>
+    <string name="away">AWAY</string>
+    <string name="chat_only">CHAT ONLY</string>
+    <string name="invisible">INVISIBLE</string>
+    <string name="layout_availability_title">Set up your availability</string>
+    <string name="status_text"> Status text</string>
+    <string name="layout_status_title">Set up your status</string>
+    <string name="contacts_media">MediaContacts</string>
+    <string name="contacts_all">AllContacts</string>
+    <string name="profile">Profile</string>
+    <string name="contacts_search">SearchContacts</string>
+    <string name="search_new_friends">Search new friends</string>
+    <string name="search_results">results for your query</string>
+    <string name="status">Status</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="message">Message</string>
+    <string name="type_query">type your query here</string>
+    <string name="language">Language</string>
+    <string name="font">Font</string>
+    <string name="default_font">DEFAULT</string>
+    <string name="flag_description">Flag of the selected language</string>
+</resources>

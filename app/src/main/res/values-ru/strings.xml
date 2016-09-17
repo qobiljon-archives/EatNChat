@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">EatNChat</string>
+   <string name="EXAMPLE">ПРИМЕР</string>
+   <string name="settings">Ваши настройки</string>
+   <string name="default_language">en</string>
+   <string name="language_name">Русский</string>
+   <string name="log_in">Войти</string>
+   <string name="create_profile">Создать Профиль</string>
+   <string name="confirm">Tasdiqlash</string>
+   <string name="try_again_warning">Iltimos, qaytadan urinib ko\'ring!</string>
+   <string name="name">Ism</string>
+   <string name="username">Имя пользователя</string>
+   <string name="password">Пароль</string>
+   <string name="profile">Профиль</string>
+   <string name="remember_me">Запомни меня</string>
+   <string name="online">ОНЛАЙН</string>
+   <string name="away">ДАЛЕКО</string>
+   <string name="chat_only">ТОЛЬКО ЧАТ</string>
+   <string name="invisible">НЕВИДИМ(А)</string>
+   <string name="layout_availability_title">Настройте ваш доступность</string>
+   <string name="status_text">Текст статуса</string>
+   <string name="layout_status_title">Настройте свой статус</string>
+   <string name="contacts_search">Поиск контактов</string>
+   <string name="contacts_today">Сегодняшнее Контакты</string>
+   <string name="contacts_media">Медиа</string>
+   <string name="contacts_all">Все контакты</string>
+   <string name="message">Сообщение</string>
+   <string name="search_new_friends">Поиск новых друзей</string>
+   <string name="search_results">результатов по вашему запросу</string>
+   <string name="status">Статус</string>
+   <string name="log_out">ВЫЙТИ</string>
+   <string name="type_query">введите свой запрос здесь</string>
+   <string name="language">Язык</string>
+   <string name="font">Шрифт</string>
+   <string name="default_font">ПО УМОЛЧАНИЮ</string>
+   <string name="flag_description">Флаг выбранного языка</string>
+</resources>

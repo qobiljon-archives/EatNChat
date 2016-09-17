@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hd">
+
+    <LinearLayout
+        android:background="#4db6ac"
+        android:orientation="horizontal"
+        android:id="@+id/contactinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:onClick="closeMessaging"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backwardarrow_icon"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView android:id="@+id/name_text_messaging"
+            android:onClick="showContactProfileInfo"
+            android:textColor="#FFF"
+            android:text="@string/name"
+            android:gravity="center_vertical|end"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton android:id="@+id/avatar_button_messaging"
+            android:onClick="showContactAvatar"
+            android:scaleType="fitCenter"
+            android:background="@drawable/contactimage_drawable"
+            android:src="@drawable/profile_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/scroll_scroll_messaging"
+        android:onClick="focusOnMessagingScreen"
+        android:layout_below="@+id/contactinfo"
+        android:layout_above="@+id/messaging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:background="#4db6ac"
+        android:id="@+id/messaging"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:onClick="showSmileKeyboard"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/smile_icon"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <EditText android:tag="message"
+            android:id="@+id/messageinput_text_messaging"
+            android:minHeight="50dp"
+            android:maxHeight="150dp"
+            android:hint="@string/message"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton android:id="@+id/send_button_messaging"
+            android:visibility="gone"
+            android:onClick="sendMessage"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_icon"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
