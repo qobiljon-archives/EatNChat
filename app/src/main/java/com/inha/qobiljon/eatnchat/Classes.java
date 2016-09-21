@@ -302,7 +302,6 @@ class Buddy {
         TextView statusText = (TextView) contactView.findViewById(R.id.status_text_contact);
 
         nameText.setText(getName());
-
         statusText.setText(getStatus());
 
         contactView.setTag(this);

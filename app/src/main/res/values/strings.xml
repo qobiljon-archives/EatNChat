@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">EatNChat</string>
 
-    <string name="host" translatable="false">192.168.18.227</string>
+    <string name="host" translatable="false">192.168.173.1</string>
     <string name="port" translatable="false">5222</string>
     <string name="service" translatable="false">enc</string>
 
